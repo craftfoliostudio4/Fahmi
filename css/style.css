@@ -21,6 +21,16 @@ html[lang='ar'] * {
 html[lang='ar'] { 
   direction: rtl; 
 }
+/* Arabic Typography Fixes: Prevent overlapping letters/lines */
+html[lang='ar'] .tracking-widest,
+html[lang='ar'] .tracking-wider,
+html[lang='ar'] .tracking-wide {
+  letter-spacing: 0 !important;
+}
+html[lang='ar'] .leading-tight,
+html[lang='ar'] .leading-snug {
+  line-height: 1.5 !important;
+}
 html[lang='en'] { direction: ltr; }
 
 #side-drawer { transform: translateX(100%); }

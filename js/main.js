@@ -239,7 +239,7 @@ function toggleLang() {
 (function() {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') document.documentElement.classList.add('dark');
-  const savedLang = localStorage.getItem('lang') || 'ar';
+  const savedLang = localStorage.getItem('lang') || 'en';
   document.documentElement.setAttribute('lang', savedLang);
   if (typeof translateDOM === 'function') translateDOM(savedLang);
 })();
